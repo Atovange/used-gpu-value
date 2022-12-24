@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react';
 import gpu_data from './gpu_data.json'
 import Select, { SingleValue } from 'react-select';
 import uuid from 'react-uuid';
+import { Analytics } from '@vercel/analytics/react';
 
 type Option = {
   value: string,
@@ -148,6 +149,7 @@ function App() {
         </span>
         <span>@Atovange</span>
       </a>
+      <Analytics />
     </div>
   );
 }
