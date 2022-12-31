@@ -66,6 +66,8 @@ function App() {
 
   function removeGPU(id: string) {
     setTableRows(tableRows.filter(row => row.id !== id));
+
+    localStorage.setItem("table", JSON.stringify(tableRows));
   }
 
   return (
